@@ -1,0 +1,70 @@
+<h1 class="text-3xl font-bold mb-6">
+  Transaksi Penjualan
+</h1>
+
+<!-- LIST PRODUK -->
+<div
+  id="produkList"
+  class="grid grid-cols-3 gap-5 mb-8"
+></div>
+
+<!-- KERANJANG -->
+<div class="bg-white rounded-xl shadow p-5">
+
+  <h2 class="text-2xl font-bold mb-4">
+    Keranjang
+  </h2>
+
+  <!-- ISI KERANJANG -->
+  <div id="keranjang"></div>
+
+  <!-- TOTAL -->
+  <div class="mt-5 text-2xl font-bold">
+
+    Total:
+    Rp <span id="total">0</span>
+
+  </div>
+
+  <!-- INPUT PEMBAYARAN -->
+  <div class="mt-6">
+
+    <label class="block mb-2 font-semibold">
+      Uang Pembayaran
+    </label>
+
+    <input
+      type="number"
+      id="bayar"
+      placeholder="Masukkan uang pembayaran"
+      class="w-full border p-3 rounded-lg"
+    >
+
+  </div>
+
+  <!-- BUTTON BAYAR -->
+  <button
+    onclick="prosesPembayaran()"
+    class="w-full mt-5 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-lg font-bold"
+  >
+    Bayar Sekarang
+  </button>
+
+  <!-- KEMBALIAN -->
+  <div class="mt-5 text-xl font-bold">
+
+    Kembalian:
+    Rp <span id="kembalian">0</span>
+
+  </div>
+    <div
+    id="struk"
+    class="hidden mt-8 border-t pt-5"></div>
+
+    <!-- QR PEMBAYARAN -->
+<div
+  id="qrcode"
+  class="mt-6 flex justify-center"
+></div>
+
+</div>
